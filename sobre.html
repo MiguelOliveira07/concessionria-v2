@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Clássicos Eternos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Clássicos <span>Eternos</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Header -->
+    <header class="catalog-header">
+        <h1>Sobre Nós</h1>
+        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Paixão por carros antigos, preservada com respeito e dedicação.</p>
+    </header>
+
+    <div class="sobre-section">
+        <div class="container">
+
+            <!-- Nossa História -->
+            <div style="margin-bottom: 80px;">
+                <h2>Nossa História</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); gap: 3rem; align-items: center;">
+                    <div>
+                        <p style="font-size: 1.2rem; line-height: 1.8;">Clássicos Eternos nasceu em Contagem, Minas Gerais, como um projeto apaixonado por automóveis que marcaram a história do Brasil e do mundo.</p>
+                        <p style="font-size: 1.2rem; line-height: 1.8;">Criado por estudantes da <strong>Faculdade UNIFASAR</strong>, o site reúne os carros mais icônicos da era dourada do automobilismo brasileiro: Opala, Fusca, Maverick, Puma, Chevette, Karmann Ghia e muitos outros.</p>
+                        <p style="font-size: 1.2rem; line-height: 1.8;">Nosso objetivo é preservar a memória desses veículos que representam cultura, design e engenharia de outra época.</p>
+                    </div>
+                    <div>
+                        <img src="imagens/fusca.jpg" alt="Fusca clássico" style="width: 100%; border-radius: 12px; box-shadow: 0 15px 30px rgba(0,0,0,0.6);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Missão, Visão e Valores -->
+            <div style="background: #252525; padding: 4rem 3rem; border-radius: 12px; margin-bottom: 80px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; text-align: center;">
+                    <div>
+                        <h3 style="color: var(--cor-secundaria); font-size: 2rem; margin-bottom: 1rem;">Missão</h3>
+                        <p style="font-size: 1.15rem;">Catalogar, documentar e compartilhar a história dos carros antigos brasileiros, incentivando a preservação e o amor pela mecânica clássica.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--cor-secundaria); font-size: 2rem; margin-bottom: 1rem;">Visão</h3>
+                        <p style="font-size: 1.15rem;">Ser o maior catálogo digital de carros clássicos do Brasil, conectando colecionadores, entusiastas e novas gerações.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--cor-secundaria); font-size: 2rem; margin-bottom: 1rem;">Valores</h3>
+                        <p style="font-size: 1.15rem;">Paixão • Preservação • Qualidade • Respeito pela história automotiva</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto UNIFASAR -->
+            <div style="text-align: center; margin-bottom: 80px;">
+                <h2 style="font-family: 'Playfair Display', serif; font-size: 2.6rem; margin-bottom: 1.5rem;">Um Projeto da UNIFASAR</h2>
+                <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.2rem;">
+                    Desenvolvido por alunos da Faculdade UNIFASAR como projeto acadêmico, Clássicos Eternos combina tecnologia moderna com o respeito pela tradição automobilística brasileira.
+                </p>
+                <a href="contato.html" class="btn">Faça parte dessa história</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clássicos Eternos - Projeto UNIFASAR • Todos os direitos reservados</p>
+            <div class="social">
+                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
+                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
+                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

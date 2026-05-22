@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Clássicos Eternos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Clássicos <span>Eternos</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="galeria.html" class="active">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="hamburger">☰</div>
+    </nav>
+
+    <!-- Header da Galeria -->
+    <header class="gallery-header">
+        <h1>Galeria de Clássicos</h1>
+        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Momentos eternos da história automotiva brasileira</p>
+    </header>
+
+    <!-- Grid da Galeria -->
+    <div class="gallery-grid">
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Opala.jpg')">
+            <img src="imagens/Opala.jpg" alt="Chevrolet Opala">
+            <div class="gallery-overlay">
+                <h3>Chevrolet Opala</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/fusca.jpg')">
+            <img src="imagens/fusca.jpg" alt="Volkswagen Fusca">
+            <div class="gallery-overlay">
+                <h3>Volkswagen Fusca</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/maverick.jpg')">
+            <img src="imagens/maverick.jpg" alt="Ford Maverick">
+            <div class="gallery-overlay">
+                <h3>Ford Maverick</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Puma.jpg')">
+            <img src="imagens/Puma.jpg" alt="Puma GT">
+            <div class="gallery-overlay">
+                <h3>Puma GT</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Chevett.jpg')">
+            <img src="imagens/Chevett.jpg" alt="Chevrolet Chevette">
+            <div class="gallery-overlay">
+                <h3>Chevrolet Chevette</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/karmann Ghia.webp')">
+            <img src="imagens/karmann Ghia.webp" alt="Volkswagen Karmann Ghia">
+            <div class="gallery-overlay">
+                <h3>Volkswagen Karmann Ghia</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Fiat-147.jpg')">
+            <img src="imagens/Fiat-147.jpg" alt="Fiat 147">
+            <div class="gallery-overlay">
+                <h3>Fiat 147</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Dogde cart.jpg')">
+            <img src="imagens/Dogde cart.jpg" alt="Dodge Dart">
+            <div class="gallery-overlay">
+                <h3>Dodge Dart</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/Willys.jpg')">
+            <img src="imagens/Willys.jpg" alt="Willys Overland">
+            <div class="gallery-overlay">
+                <h3>Willys Overland</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/cu.jpg')">
+            <img src="imagens/cu.jpg" alt="Clássico Brasileiro">
+            <div class="gallery-overlay">
+                <h3>Ford Corcel / Cuda</h3>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="if(event.target.id === 'lightbox') closeLightbox()">
+        <div class="lightbox-content">
+            <span class="close-lightbox" onclick="closeLightbox()">×</span>
+            <img id="lightbox-image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Clássicos Eternos - Projeto UNIFASAR • Todos os direitos reservados</p>
+            <div class="social">
+                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
+                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
+                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Lightbox functions
+        function openLightbox(src) {
+            document.getElementById('lightbox-image').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        // Fechar com tecla ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") closeLightbox();
+        });
+    </script>
+</body>
+</html>

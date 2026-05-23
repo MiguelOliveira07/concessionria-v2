@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoções | Clássicos Eternos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        .landing-body {
+            background: linear-gradient(rgba(26, 26, 26, 0.90), rgba(26, 26, 26, 0.95)), 
+                        url('imagens/Opala.jpg') center/cover fixed;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .promo-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #8B0000;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 10px rgba(139, 0, 0, 0.5);
+            z-index: 2;
+        }
+
+        .preco-antigo {
+            text-decoration: line-through;
+            color: #777;
+            font-size: 1.1rem;
+        }
+
+        .preco-promo {
+            color: #D4AF37;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .card-promo .car-info {
+            position: relative;
+        }
+
+        .economia {
+            color: #00cc00;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body class="landing-body">
+
+    <div id="header"></div>
+
+    <!-- HERO PROMOÇÕES -->
+    <header class="hero" style="margin-top: 70px; height: 85vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div class="hero-content">
+            <h1 style="font-size: 4.8rem; line-height: 1.1; color: #D4AF37;">
+                PROMOÇÕES ESPECIAIS
+            </h1>
+            <p style="font-size: 1.7rem; max-width: 800px; margin: 25px auto;">
+                Clássicos incríveis com condições imperdíveis
+            </p>
+            <p style="font-size: 1.3rem; opacity: 0.9;">Oportunidades que não voltam!</p>
+
+            <div style="margin: 50px 0 30px;">
+                <a href="#promocoes" class="btn" style="font-size: 1.4rem; padding: 18px 45px;">
+                    Ver Ofertas
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE PROMOÇÕES -->
+    <section id="promocoes" class="destaques" style="background: rgba(26,26,26,0.97); padding: 100px 5% 120px;">
+        <h2 style="margin-bottom: 3.5rem;">Carros em Promoção</h2>
+        
+        <div class="car-grid">
+
+            <!-- Puma GT -->
+            <div class="car-card card-promo">
+                <div class="promo-badge">🔥 PROMOÇÃO</div>
+                <img src="imagens/Puma.jpg" alt="Puma GT">
+                <div class="car-info">
+                    <h3>Puma GT</h3>
+                    <span class="ano">1974 • Brasil</span>
+                    <p>Esportivo clássico brasileiro, motor 1.6 e design marcante.</p>
+                    
+                    <p class="preco-antigo">R$ 185.000</p>
+                    <p class="preco-promo">R$ 159.900</p>
+                    <p class="economia">Economize R$ 25.100</p>
+                    
+                    <a href="contato.html" class="detalhes-btn">Aproveitar Promoção</a>
+                </div>
+            </div>
+
+            <!-- Karmann Ghia -->
+            <div class="car-card card-promo">
+                <div class="promo-badge">🔥 PROMOÇÃO</div>
+                <img src="imagens/karmann Ghia.webp" alt="Volkswagen Karmann Ghia">
+                <div class="car-info">
+                    <h3>Volkswagen Karmann Ghia</h3>
+                    <span class="ano">1972 • Brasil</span>
+                    <p>Ícone de elegância e estilo europeu feito no Brasil.</p>
+                    
+                    <p class="preco-antigo">R$ 135.000</p>
+                    <p class="preco-promo">R$ 118.500</p>
+                    <p class="economia">Economize R$ 16.500</p>
+                    
+                    <a href="contato.html" class="detalhes-btn">Aproveitar Promoção</a>
+                </div>
+            </div>
+
+            <!-- Willys Overland -->
+            <div class="car-card card-promo">
+                <div class="promo-badge">🔥 PROMOÇÃO</div>
+                <img src="imagens/Willys.jpg" alt="Willys Overland">
+                <div class="car-info">
+                    <h3>Willys Overland</h3>
+                    <span class="ano">1965 • Brasil</span>
+                    <p>Clássico robusto, parte da história do Jeep no Brasil.</p>
+                    
+                    <p class="preco-antigo">R$ 98.000</p>
+                    <p class="preco-promo">R$ 85.900</p>
+                    <p class="economia">Economize R$ 12.100</p>
+                    
+                    <a href="contato.html" class="detalhes-btn">Aproveitar Promoção</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chamada Final -->
+    <section class="sobre-rapido" style="background: #111; padding: 100px 5%;">
+        <div class="container" style="text-align: center;">
+            <h2>Essas promoções são por tempo limitado!</h2>
+            <p style="font-size: 1.3rem; max-width: 700px; margin: 20px auto;">
+                Entre em contato conosco e garanta seu clássico com as melhores condições do mercado.
+            </p>
+            <a href="contato.html" class="btn" style="font-size: 1.4rem; padding: 18px 50px;">
+                Falar com Especialista
+            </a>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="js/includes.js"></script>
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

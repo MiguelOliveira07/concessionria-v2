@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clássicos em Destaque | Clássicos Eternos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body class="destaques-page">
+
+    <div id="header"></div>
+
+    <div class="destaques-header">
+        <h1>Clássicos em Destaque</h1>
+        <p>Os modelos mais icônicos e desejados da nossa coleção</p>
+    </div>
+
+    <div class="car-grid">
+
+        <!-- Fiat 147 -->
+        <div class="car-card">
+            <img src="imagens/Fiat-147.jpg" alt="Fiat 147">
+            <div class="car-info">
+                <h3>Fiat 147</h3>
+                <span class="ano">1976 - 1987 • Brasil/Itália</span>
+                <p>Primeiro Fiat brasileiro</p>
+                <a href="contato.html" class="detalhes-btn">Ver Detalhes</a>
+            </div>
+        </div>
+
+        <!-- Dodge Dart -->
+        <div class="car-card">
+            <img src="imagens/Dogde cart.jpg" alt="Dodge Dart">
+            <div class="car-info">
+                <h3>Dodge Dart</h3>
+                <span class="ano">1970 - 1980 • EUA/Brasil</span>
+                <p>Potente e imponente.</p>
+                <a href="contato.html" class="detalhes-btn">Ver Detalhes</a>
+            </div>
+        </div>
+
+        <!-- Chevett -->
+        <div class="car-card">
+            <img src="imagens/Chevett.jpg" alt="Chevrolet Chevett">
+            <div class="car-info">
+                <h3>Chevrolet Chevette</h3>
+                <span class="ano">1973 - 1994 • Brasil</span>
+                <p>Um dos carros mais populares no Brasil.</p>
+                <a href="contato.html" class="detalhes-btn">Ver Detalhes</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="js/includes.js"></script>
+    <script>
+        // Menu mobile
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

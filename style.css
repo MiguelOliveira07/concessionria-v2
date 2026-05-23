@@ -489,3 +489,116 @@ footer {
 .ficha-opala p{
     margin:10px 0;
 }
+
+/* =============================================
+   PÁGINA DE DESTAQUES
+   ============================================= */
+
+.destaques-page {
+    background: #0f0f0f;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+.destaques-header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.destaques-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+.destaques-header p {
+    font-size: 1.4rem;
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Grid dos carros */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2.5rem;
+    padding: 40px 5% 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Card */
+.car-card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+}
+
+.car-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
+}
+
+.car-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 24px;
+    text-align: center;
+}
+
+.car-info h3 {
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.ano {
+    color: #D4AF37;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.car-info p {
+    margin: 15px 0 20px;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+/* Botão */
+.detalhes-btn {
+    display: block;
+    background: #8B0000;
+    color: white;
+    padding: 14px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.detalhes-btn:hover {
+    background: #D4AF37;
+    color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .destaques-header h1 {
+        font-size: 3rem;
+    }
+    
+    .car-grid {
+        grid-template-columns: 1fr;
+        padding: 30px 5% 60px;
+    }
+}

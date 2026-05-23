@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo - Clássicos Eternos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Clássicos <span>Eternos</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="catalogo.html" class="active">Catálogo</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Header do Catálogo -->
     <header class="catalog-header">
         <h1>Catálogo de Clássicos</h1>
-        <p style="font-size:1.4rem; max-width:700px; margin:15px auto;">Carros brasileiros e importados que marcaram época</p>
+        <p style="font-size:1.4rem; max-width:700px; margin:15px auto;">Carros brasileiros e importados que marcaram
+            época</p>
     </header>
 
     <!-- Grid de Carros -->
@@ -36,7 +26,7 @@
                 <h3>Chevrolet Opala</h3>
                 <span class="ano">1968 - 1992 • Brasil</span>
                 <p>O rei dos muscle cars brasileiros</p>
-                <a href="./opala.html" class="detalhes-btn">Ver Detalhes</a>
+                <a href="#" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
         <div class="car-card">
@@ -45,10 +35,10 @@
                 <h3>Dodge Dart</h3>
                 <span class="ano">1970 - 1980 • EUA/Brasil</span>
                 <p>Potente e imponente</p>
-                <a href="./dogde.html" class="detalhes-btn">Ver Detalhes</a>
+                <a href="#" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
-        
+
         <div class="car-card">
             <img src="imagens/Chevett.jpg" alt="Chevrolet Chevette">
             <div class="car-info">
@@ -68,8 +58,8 @@
                 <a href="#" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
-        
-        
+
+
         <div class="car-card">
             <img src="imagens/karmann Ghia.webp" alt="Volkswagen Karmann Ghia">
             <div class="car-info">
@@ -122,23 +112,15 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Clássicos Eternos - Projeto UNIFASAR • Todos os direitos reservados</p>
-            <div class="social">
-                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
-                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
-                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
+    <script src="js/includes.js"></script>
     <script>
-        // Menu mobile
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
+
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
     </script>
 </body>
+
 </html>

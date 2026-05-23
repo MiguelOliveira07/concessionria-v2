@@ -1,31 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria - Clássicos Eternos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Clássicos <span>Eternos</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="galeria.html" class="active">Galeria</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Header da Galeria -->
     <header class="gallery-header">
         <h1>Galeria de Clássicos</h1>
-        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Momentos eternos da história automotiva brasileira</p>
+        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Momentos eternos da história automotiva
+            brasileira</p>
     </header>
 
     <!-- Grid da Galeria -->
@@ -111,23 +101,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Clássicos Eternos - Projeto UNIFASAR • Todos os direitos reservados</p>
-            <div class="social">
-                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
-                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
-                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
+    <script src="js/includes.js"></script>            
     <script>
-        // Menu mobile
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
 
         // Lightbox functions
         function openLightbox(src) {
@@ -140,9 +120,10 @@
         }
 
         // Fechar com tecla ESC
-        document.addEventListener('keydown', function(e) {
+        document.addEventListener('keydown', function (e) {
             if (e.key === "Escape") closeLightbox();
         });
     </script>
 </body>
+
 </html>

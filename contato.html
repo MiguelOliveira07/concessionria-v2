@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Clássicos Eternos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Clássicos <span>Eternos</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contato.html" class="active">Contato</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-    </nav>
+    <div id="header"></div>
 
     <!-- Header de Contato -->
-    <header class="catalog-header" style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('imagens/Opala.jpg') center/cover;">
+    <header class="catalog-header"
+        style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('imagens/Opala.jpg') center/cover;">
         <h1 style="color: white;">Entre em Contato</h1>
-        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Estamos aqui para ajudar você a encontrar ou vender seu clássico dos sonhos.</p>
+        <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Estamos aqui para ajudar você a encontrar ou
+            vender seu clássico dos sonhos.</p>
     </header>
 
     <div class="contact-section">
@@ -40,7 +31,7 @@
                             <label>Nome completo</label>
                             <input type="text" required placeholder="Seu nome">
                         </div>
-                        
+
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" required placeholder="seu@email.com">
@@ -53,7 +44,8 @@
 
                         <div class="form-group">
                             <label>Mensagem</label>
-                            <textarea required rows="6" placeholder="Fale sobre o carro que procura, restauração, venda ou qualquer dúvida..."></textarea>
+                            <textarea required rows="6"
+                                placeholder="Fale sobre o carro que procura, restauração, venda ou qualquer dúvida..."></textarea>
                         </div>
 
                         <button type="submit" class="btn" style="width: 100%; padding: 16px;">
@@ -65,7 +57,7 @@
                 <!-- Informações de Contato -->
                 <div class="contact-info">
                     <h2>Outras formas de contato</h2>
-                    
+
                     <div class="info-card">
                         <strong>📧 Email</strong>
                         <p>contato@classicoseternos.com</p>
@@ -97,30 +89,22 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Clássicos Eternos - Todos os direitos reservados</p>
-            <div class="social">
-                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
-                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
-                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
+    <script src="js/includes.js"></script>
     <script>
-        // Menu mobile
-        document.querySelector('.hamburger').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
+            // Menu mobile
+            document.querySelector('.hamburger').addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
 
         // Simulação de envio do formulário
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('✅ Mensagem enviada com sucesso!\n\nObrigado pelo contato. Responderemos em breve.');
             this.reset();
         });
     </script>
 </body>
+
 </html>

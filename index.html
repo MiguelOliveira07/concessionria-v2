@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clássicos Eternos - Paixão que Nunca Envelhece</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+
     <!-- Background com baixa opacidade (como você pediu) -->
     <style>
         .landing-body {
-            background: linear-gradient(
-                rgba(26, 26, 26, 0.88),
-                rgba(26, 26, 26, 0.92)
-            ), url('imagens/Opala.jpg') center/cover fixed;
+            background: linear-gradient(rgba(26, 26, 26, 0.88),
+                    rgba(26, 26, 26, 0.92)), url('imagens/Opala.jpg') center/cover fixed;
             background-attachment: fixed;
             min-height: 100vh;
         }
     </style>
 </head>
+
+
 <body class="landing-body">SSS
 
-    <!-- NAVEGAÇÃO -->
-    <nav class="navbar">
-        <div class="logo">
-            <h1>Clássicos <span>Eternos</span></h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-    </nav>
+    <div id="header"></div>
 
     <!-- HERO - Landing Page -->
-    <header class="hero" style="margin-top: 70px; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <header class="hero"
+        style="margin-top: 70px; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
         <div class="hero-content">
             <h1 style="font-size: 4.5rem; line-height: 1.1;">Carros que nunca saem de moda</h1>
-            <p style="font-size: 1.6rem; max-width: 700px; margin: 20px auto;">Descubra, admire e apaixone-se pelos clássicos brasileiros e do mundo.</p>
-            
+            <p style="font-size: 1.6rem; max-width: 700px; margin: 20px auto;">Descubra, admire e apaixone-se pelos
+                clássicos brasileiros e do mundo.</p>
+
             <div style="margin: 40px 0;">
-                <a href="catalogo.html" class="btn" style="font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Explorar Catálogo</a>
-                <a href="galeria.html" class="btn" style="background: transparent; border: 3px solid var(--cor-secundaria); color: var(--cor-secundaria); font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Ver Galeria</a>
+                <a href="catalogo.html" class="btn"
+                    style="font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Explorar Catálogo</a>
+                <a href="galeria.html" class="btn"
+                    style="background: transparent; border: 3px solid var(--cor-secundaria); color: var(--cor-secundaria); font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Ver
+                    Galeria</a>
             </div>
-            
+
             <p style="opacity: 0.9; font-size: 1.1rem;">Projeto acadêmico da <strong>Faculdade UNIFASAR</strong></p>
         </div>
     </header>
@@ -96,23 +91,16 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Clássicos Eternos - Projeto UNIFASAR • Todos os direitos reservados</p>
-            <div class="social">
-                <a href="https://www.instagram.com/unifasar/" target="_blank">Instagram</a> | 
-                <a href="https://www.facebook.com/unifasar/" target="_blank">Facebook</a> | 
-                <a href="https://www.youtube.com/@UNIFASAR" target="_blank">YouTube</a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
+    <script src="js/includes.js"></script>
     <script>
+
         // Menu mobile
         document.querySelector('.hamburger').addEventListener('click', () => {
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
+
 </html>

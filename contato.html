@@ -11,7 +11,6 @@
 <body>
     <div id="header"></div>
 
-    <!-- Header de Contato -->
     <header class="catalog-header"
         style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('imagens/Opala.jpg') center/cover;">
         <h1 style="color: white;">Entre em Contato</h1>
@@ -23,7 +22,6 @@
         <div class="container">
             <div class="contact-grid">
 
-                <!-- Formulário -->
                 <div class="form-container">
                     <h2>Envie sua mensagem</h2>
                     <form id="contactForm">
@@ -54,7 +52,6 @@
                     </form>
                 </div>
 
-                <!-- Informações de Contato -->
                 <div class="contact-info">
                     <h2>Outras formas de contato</h2>
 
@@ -93,12 +90,11 @@
 
     <script src="js/includes.js"></script>
     <script>
-            // Menu mobile
+
             document.querySelector('.hamburger').addEventListener('click', () => {
                 document.querySelector('.nav-links').classList.toggle('active');
             });
 
-        // Simulação de envio do formulário
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
             alert('✅ Mensagem enviada com sucesso!\n\nObrigado pelo contato. Responderemos em breve.');

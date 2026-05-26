@@ -4,103 +4,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Clássicos Eternos - Paixão que Nunca Envelhece</title>
+
     <link rel="stylesheet" href="style.css">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
-
-    <!-- Background com baixa opacidade (como você pediu) -->
-    <style>
-        .landing-body {
-            background: linear-gradient(rgba(26, 26, 26, 0.88),
-                    rgba(26, 26, 26, 0.92)), url('imagens/Opala.jpg') center/cover fixed;
-            background-attachment: fixed;
-            min-height: 100vh;
-        }
-    </style>
 </head>
 
-
-<body class="landing-body">SSS
+<body class="landing-body">
 
     <div id="header"></div>
 
-    <!-- HERO - Landing Page -->
-    <header class="hero"
-        style="margin-top: 70px; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center;">
-        <div class="hero-content">
-            <h1 style="font-size: 4.5rem; line-height: 1.1;">Carros que nunca saem de moda</h1>
-            <p style="font-size: 1.6rem; max-width: 700px; margin: 20px auto;">Descubra, admire e apaixone-se pelos
-                clássicos brasileiros e do mundo.</p>
+    <header class="hero">
 
-            <div style="margin: 40px 0;">
-                <a href="catalogo.html" class="btn"
-                    style="font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Explorar Catálogo</a>
-                <a href="galeria.html" class="btn"
-                    style="background: transparent; border: 3px solid var(--cor-secundaria); color: var(--cor-secundaria); font-size: 1.3rem; padding: 18px 40px; margin: 0 10px;">Ver
-                    Galeria</a>
+        <div class="hero-content">
+
+            <h1>
+                Carros que nunca saem de moda
+            </h1>
+
+            <p class="hero-text">
+                Descubra, admire e apaixone-se pelos clássicos brasileiros e do mundo.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="catalogo.html" class="btn">
+                    Explorar Catálogo
+                </a>
+
+                <a href="galeria.html" class="btn btn-outline">
+                    Ver Galeria
+                </a>
+
             </div>
 
-            <p style="opacity: 0.9; font-size: 1.1rem;">Projeto acadêmico da <strong>Faculdade UNIFASAR</strong></p>
+            <p class="faculdade">
+                Projeto acadêmico da <strong>Faculdade UNIFASAR</strong>
+            </p>
+
         </div>
     </header>
 
-    <!-- DESTAQUES -->
-    <section class="destaques" style="background: rgba(26,26,26,0.95);">
-        <h2>Clássicos em Destaque</h2>
+    <section class="destaques">
+
+        <h2>
+            <a href="em-destaque.html" class="titulo-destaques">
+                Clássicos em Destaque
+            </a>
+        </h2>
+
         <div class="car-grid">
-            <div class="car-card">
-                <img src="imagens/Opala.jpg" alt="Chevrolet Opala">
-                <div class="car-info">
-                    <h3>Chevrolet Opala</h3>
-                    <span class="ano">1968 - 1992 • Brasil</span>
-                    <p>O rei dos muscle cars brasileiros</p>
-                    <a href="catalogo.html" class="detalhes-btn">Ver Detalhes</a>
-                </div>
-            </div>
 
-            <div class="car-card">
-                <img src="imagens/fusca.jpg" alt="Volkswagen Fusca">
-                <div class="car-info">
-                    <h3>Volkswagen Fusca</h3>
-                    <span class="ano">1959 - 1996 • Brasil</span>
-                    <p>O carro do povo - símbolo brasileiro</p>
-                    <a href="catalogo.html" class="detalhes-btn">Ver Detalhes</a>
-                </div>
-            </div>
+        <div class="car-card">
+            <img src="imagens/mustang.jpg" alt="Ford Mustang">
 
-            <div class="car-card">
-                <img src="imagens/maverick.jpg" alt="Ford Maverick">
-                <div class="car-info">
-                    <h3>Ford Maverick</h3>
-                    <span class="ano">1973 - 1979 • Brasil</span>
-                    <p>Muscle car nacional com potência</p>
-                    <a href="catalogo.html" class="detalhes-btn">Ver Detalhes</a>
-                </div>
+            <div class="car-info">
+                <h3>Ford Mustang</h3>
+
+                <span class="ano">
+                    1964 - Atual • EUA
+                </span>
+
+                <p>
+                    O muscle car mais famoso da história.
+                </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                    Ver Detalhes
+                </a>
             </div>
         </div>
+
+        <div class="car-card">
+            <img src="imagens/kombi.jpg" alt="Volkswagen Kombi">
+
+            <div class="car-info">
+                <h3>Volkswagen Kombi</h3>
+
+                <span class="ano">
+                    1957 - 2013 • Brasil
+                </span>
+
+                <p>
+                    Ícone mundial de liberdade e nostalgia.
+                </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                    Ver Detalhes
+                </a>
+            </div>
+        </div>
+
+         <div class="car-card">
+            <img src="imagens/caravan.jpg" alt="Chevrolet Caravan">
+
+            <div class="car-info">
+                <h3>Chevrolet Caravan</h3>
+
+                <span class="ano">
+                 1975 - 1992 • Brasil
+                 </span>
+
+                <p>
+                 A perua clássica que marcou gerações brasileiras.
+                 </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                     Ver Detalhes
+                </a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="imagens/corvette.jpg" alt="Chevrolet Corvette">
+
+            <div class="car-info">
+                <h3>Chevrolet Corvette</h3>
+
+                <span class="ano">
+                    1953 - Atual • EUA
+                </span>
+
+                <p>
+                    Potência, luxo e desempenho lendário.
+                </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                    Ver Detalhes
+                </a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="imagens/brasilia.jpg" alt="Volkswagen Brasília">
+
+            <div class="car-info">
+                <h3>Volkswagen Brasília</h3>
+
+                <span class="ano">
+                    1973 - 1982 • Brasil
+                </span>
+
+                <p>
+                    Um dos maiores símbolos das famílias brasileiras.
+                </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                    Ver Detalhes
+                </a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="imagens/camaro.jpg" alt="Chevrolet Camaro">
+
+            <div class="car-info">
+                <h3>Chevrolet Camaro</h3>
+
+                <span class="ano">
+                    1966 - Atual • EUA
+                </span>
+
+                <p>
+                    Visual agressivo e desempenho impressionante.
+                </p>
+
+                <a href="contato.html" class="detalhes-btn">
+                    Ver Detalhes
+                </a>
+            </div>
+        </div>
+
+    </div>
     </section>
 
-    <!-- Chamada final -->
-    <section class="sobre-rapido" style="background: #111;">
+    <section class="sobre-rapido">
+
         <div class="container">
-            <h2>Preservando a história sobre rodas</h2>
-            <p>Clássicos Eternos é mais que um catálogo. É um tributo à paixão automobilística brasileira.</p>
-            <a href="sobre.html" class="btn">Conheça nossa história</a>
+
+            <h2>
+                Preservando a história sobre rodas
+            </h2>
+
+            <p>
+                Clássicos Eternos é mais que um catálogo.
+                É um tributo à paixão automobilística brasileira.
+            </p>
+
+            <a href="sobre.html" class="btn">
+                Conheça nossa história
+            </a>
+
         </div>
     </section>
 
     <div id="footer"></div>
 
     <script src="js/includes.js"></script>
-    <script>
 
-        // Menu mobile
+    <script>
         document.querySelector('.hamburger').addEventListener('click', () => {
             document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
+
 </body>
 
 </html>

@@ -1,8 +1,3 @@
-/* =============================================
-   style.css - VERSÃO FINAL AJUSTADA
-   Clássicos Eternos - Projeto UNIFASAR
-   ============================================= */
-
 :root {
     --cor-primaria: #8B0000;
     --cor-secundaria: #D4AF37;
@@ -23,7 +18,6 @@ body {
     line-height: 1.6;
 }
 
-/* === NAVEGAÇÃO === */
 .navbar {
     background: rgba(26, 26, 26, 0.95);
     position: fixed;
@@ -71,7 +65,6 @@ body {
     cursor: pointer;
 }
 
-/* === HEADER COMUM (Catálogo, Galeria, Sobre, Contato) === */
 .catalog-header,
 .gallery-header {
     padding: 120px 5% 60px;
@@ -87,7 +80,6 @@ body {
     color: var(--cor-secundaria);
 }
 
-/* === CARDS GERAIS (Catálogo e Destaques) === */
 .car-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -145,7 +137,6 @@ body {
     color: #000;
 }
 
-/* === PÁGINA DE CONTATO === */
 .contact-section {
     padding: 80px 5%;
     background: var(--fundo-escuro);
@@ -252,57 +243,97 @@ body {
     color: #000;
 }
 
-/* === GALERIA === */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-    padding: 60px 5% 100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 80px 5% 120px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .gallery-item {
     position: relative;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
-    transition: all 0.4s;
+    border-radius: 18px;
     cursor: pointer;
+    background: #111;
+    transition: all 0.5s ease;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.5);
 }
 
 .gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 30px rgba(139, 0, 0, 0.4);
+    transform: translateY(-12px) scale(1.02);
+
+    box-shadow:
+        0 25px 45px rgba(0,0,0,0.7),
+        0 0 25px rgba(212,175,55,0.15);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 320px;
+    height: 340px;
     object-fit: cover;
     display: block;
+
+    transition: transform 0.7s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.12);
 }
 
 .gallery-overlay {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.85));
-    color: white;
-    padding: 20px 15px 15px;
-    transform: translateY(30px);
-    transition: all 0.4s;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 25px;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.15),
+            rgba(0,0,0,0.95)
+        );
+
+    transition: 0.4s;
 }
 
 .gallery-item:hover .gallery-overlay {
-    transform: translateY(0);
+    background:
+        linear-gradient(
+            transparent,
+            rgba(139,0,0,0.15),
+            rgba(0,0,0,0.95)
+        );
 }
 
 .gallery-overlay h3 {
     margin: 0;
-    font-size: 1.4rem;
+
+    font-size: 1.7rem;
+    color: white;
+
+    font-family: 'Playfair Display', serif;
+
+    transform: translateY(20px);
+    opacity: 0.8;
+
+    transition: all 0.4s ease;
 }
 
-/* Lightbox */
+.gallery-item:hover .gallery-overlay h3 {
+    transform: translateY(0);
+
+    opacity: 1;
+    color: var(--cor-secundaria);
+}
+
 .lightbox {
     display: none;
     position: fixed;
@@ -345,7 +376,6 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-/* === PÁGINA SOBRE === */
 .sobre-section {
     padding: 80px 5%;
 }
@@ -358,7 +388,6 @@ body {
     color: var(--cor-secundaria);
 }
 
-/* === ESTILOS GERAIS === */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://source.unsplash.com/1920x1080/?classic,car') center/cover no-repeat;
@@ -429,7 +458,6 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .hamburger { display: block; }
     .nav-links {
@@ -453,9 +481,6 @@ footer {
     }
 }
 
-/* ===================================
-   PÁGINA OPALA
-=================================== */
 
 .pagina-opala{
     background:#111;
@@ -490,10 +515,6 @@ footer {
     margin:10px 0;
 }
 
-/* =============================================
-   PÁGINA DE DESTAQUES
-   ============================================= */
-
 .destaques-page {
     background: #0f0f0f;
     min-height: 100vh;
@@ -519,17 +540,15 @@ footer {
     margin: 0 auto;
 }
 
-/* Grid dos carros */
 .car-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem;
     padding: 40px 5% 100px;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-/* Card */
 .car-card {
     background: #1a1a1a;
     border-radius: 16px;
@@ -572,7 +591,6 @@ footer {
     line-height: 1.5;
 }
 
-/* Botão */
 .detalhes-btn {
     display: block;
     background: #8B0000;
@@ -591,7 +609,6 @@ footer {
     color: #000;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .destaques-header h1 {
         font-size: 3rem;
@@ -645,3 +662,96 @@ footer {
             font-weight: bold;
             margin: 8px 0;
         }
+.landing-body {
+    background:
+        linear-gradient(
+            rgba(26, 26, 26, 0.88),
+            rgba(26, 26, 26, 0.92)
+        ),
+        url('imagens/Opala.jpg') center/cover fixed;
+
+    min-height: 100vh;
+}
+
+.hero {
+    margin-top: 70px;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.hero-buttons {
+    margin: 40px 0;
+}
+
+.hero-buttons .btn {
+    font-size: 1.3rem;
+    padding: 18px 40px;
+    margin: 0 10px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 3px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.faculdade {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+.destaques {
+    background: rgba(26, 26, 26, 0.95);
+}
+
+.titulo-destaques {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.titulo-destaques:hover {
+    color: var(--cor-secundaria);
+}
+
+.sobre-rapido {
+    background: #111;
+}
+
+footer .social a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer .social a:hover {
+    color: #D4AF37;
+}
+.gallery-item:last-child {
+    grid-column: 2;
+}
+.cuda-card {
+    grid-column: 2;
+}
+@media (max-width: 768px) {
+    .cuda-card {
+        grid-column: auto;
+    }
+}

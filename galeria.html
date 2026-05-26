@@ -11,15 +11,61 @@
 <body>
     <div id="header"></div>
 
-    <!-- Header da Galeria -->
     <header class="gallery-header">
         <h1>Galeria de Clássicos</h1>
         <p style="font-size: 1.4rem; max-width: 700px; margin: 15px auto;">Momentos eternos da história automotiva
             brasileira</p>
     </header>
 
-    <!-- Grid da Galeria -->
     <div class="gallery-grid">
+        
+        <div class="gallery-item" onclick="openLightbox('imagens/mustang.jpg')">
+            <img src="imagens/mustang.jpg" alt="Ford Mustang">
+
+            <div class="gallery-overlay">
+                <h3>Ford Mustang</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/kombi.jpg')">
+            <img src="imagens/kombi.jpg" alt="Volkswagen Kombi">
+
+            <div class="gallery-overlay">
+                <h3>Volkswagen Kombi</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/caravan.jpg')">
+            <img src="imagens/caravan.jpg" alt="Chevrolet Caravan">
+
+            <div class="gallery-overlay">
+                <h3>Chevrolet Caravan</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/corvette.jpg')">
+            <img src="imagens/corvette.jpg" alt="Chevrolet Corvette">
+
+            <div class="gallery-overlay">
+                <h3>Chevrolet Corvette</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/brasilia.jpg')">
+            <img src="imagens/brasilia.jpg" alt="Volkswagen Brasília">
+
+            <div class="gallery-overlay">
+                <h3>Volkswagen Brasília</h3>
+            </div>
+        </div>
+
+        <div class="gallery-item" onclick="openLightbox('imagens/camaro.jpg')">
+            <img src="imagens/camaro.jpg" alt="Chevrolet Camaro">
+
+            <div class="gallery-overlay">
+                <h3>Chevrolet Camaro</h3>
+            </div>
+        </div>
 
         <div class="gallery-item" onclick="openLightbox('imagens/Opala.jpg')">
             <img src="imagens/Opala.jpg" alt="Chevrolet Opala">
@@ -57,7 +103,7 @@
         </div>
 
         <div class="gallery-item" onclick="openLightbox('imagens/karmann Ghia.jpg')">
-            <img src="imagens/karmann Ghia.jpg" alt="Volkswagen Karmann Ghia">
+            <img src="imagens/karmann Ghia.webp" alt="Volkswagen Karmann Ghia">
             <div class="gallery-overlay">
                 <h3>Volkswagen Karmann Ghia</h3>
             </div>
@@ -84,8 +130,8 @@
             </div>
         </div>
 
-        <div class="gallery-item" onclick="openLightbox('imagens/cu.jpg')">
-            <img src="imagens/cu.jpg" alt="Clássico Brasileiro">
+        <div class="gallery-item" onclick="openLightbox('imagens/cuda.jpg')">
+            <img src="imagens/cuda.jpg" alt="Ford Corcel / Cuda">
             <div class="gallery-overlay">
                 <h3>Ford Corcel / Cuda</h3>
             </div>
@@ -93,7 +139,6 @@
 
     </div>
 
-    <!-- Lightbox -->
     <div id="lightbox" class="lightbox" onclick="if(event.target.id === 'lightbox') closeLightbox()">
         <div class="lightbox-content">
             <span class="close-lightbox" onclick="closeLightbox()">×</span>
@@ -109,7 +154,6 @@
                 document.querySelector('.nav-links').classList.toggle('active');
             });
 
-        // Lightbox functions
         function openLightbox(src) {
             document.getElementById('lightbox-image').src = src;
             document.getElementById('lightbox').style.display = 'flex';
@@ -119,7 +163,6 @@
             document.getElementById('lightbox').style.display = 'none';
         }
 
-        // Fechar com tecla ESC
         document.addEventListener('keydown', function (e) {
             if (e.key === "Escape") closeLightbox();
         });

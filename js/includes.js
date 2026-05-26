@@ -20,16 +20,7 @@ async function loadComponent(id, file) {
     }
 }
 
-
-/* =========================
-   BASE AUTOMÁTICO
-========================= */
 const base = window.location.pathname.includes("/pages/") ? "../" : "";
-
-
-/* =========================
-   HISTÓRICO (SESSÃO)
-========================= */
 const CURRENT_KEY = "current_page";
 const PREV_KEY = "prev_page";
 
@@ -46,17 +37,9 @@ function registrarPagina() {
     sessionStorage.setItem(CURRENT_KEY, current);
 }
 
-
-/* =========================
-   COMPONENTES
-========================= */
 loadComponent("header", base + "componentes/header.html");
 loadComponent("footer", base + "componentes/footer.html");
 
-
-/* =========================
-   LINKS DO MENU
-========================= */
 function configurarLinks() {
 
     const setSafeHref = (selector, path) => {
@@ -71,14 +54,9 @@ function configurarLinks() {
     setSafeHref(".nav-sobre", "sobre.html");
     setSafeHref(".nav-contato", "contato.html");
 
-    // 🔥 LOGO CLICÁVEL (CORRETO ENTRE PASTAS)
     setSafeHref(".nav-logo", "index.html");
 }
 
-
-/* =========================
-   MENU MOBILE
-========================= */
 function configurarMenuMobile() {
 
     const hamburger = document.querySelector(".hamburger");
@@ -91,10 +69,6 @@ function configurarMenuMobile() {
     }
 }
 
-
-/* =========================
-   VOLTAR SEGURO
-========================= */
 window.voltarProjeto = function (event) {
 
     event.preventDefault();
@@ -121,10 +95,6 @@ window.voltarProjeto = function (event) {
     window.location.href = prev;
 };
 
-
-/* =========================
-   INICIALIZAÇÃO
-========================= */
 document.addEventListener("DOMContentLoaded", () => {
     registrarPagina();
 });

@@ -13,37 +13,40 @@
 
     <header class="catalog-header">
         <h1>Catálogo de Clássicos</h1>
-        <p style="font-size:1.4rem; max-width:700px; margin:15px auto;">Carros brasileiros e importados que marcaram
-            época</p>
+        <p style="font-size:1.4rem; max-width:700px; margin:15px auto;">
+            Carros brasileiros e importados que marcaram época
+        </p>
     </header>
 
     <div class="car-grid">
+
         <div class="car-card">
             <img src="imagens/Opala.jpg" alt="Chevrolet Opala">
             <div class="car-info">
                 <h3>Chevrolet Opala</h3>
                 <span class="ano">1968 - 1992 • Brasil</span>
                 <p>O rei dos muscle cars brasileiros</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="imagens/Dogde cart.jpg" alt="Dodge Dart">
-            <div class="car-info">
-                <h3>Dodge Dart</h3>
-                <span class="ano">1970 - 1980 • EUA/Brasil</span>
-                <p>Potente e imponente</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/opala.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
         <div class="car-card">
-            <img src="imagens/Chevett.jpg" alt="Chevrolet Chevette">
+            <img src="imagens/Dogde dart.jpg" alt="Dodge Dart">
+            <div class="car-info">
+                <h3>Dodge Dart</h3>
+                <span class="ano">1970 - 1980 • EUA/Brasil</span>
+                <p>Potente e imponente</p>
+                <a href="pages/dodge.html" class="detalhes-btn">Ver Detalhes</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="imagens/Chevette.jpg" alt="Chevrolet Chevette">
             <div class="car-info">
                 <h3>Chevrolet Chevette</h3>
                 <span class="ano">1973 - 1994 • Brasil</span>
                 <p>Um dos carros mais populares do Brasil</p>
-                <a href="./chevett.html" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/chevette.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
@@ -53,18 +56,17 @@
                 <h3>Volkswagen Fusca</h3>
                 <span class="ano">1959 - 1996 • Brasil</span>
                 <p>O carro do povo - símbolo brasileiro</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/fusca.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
-
         <div class="car-card">
-            <img src="imagens/karmann Ghia.webp" alt="Volkswagen Karmann Ghia">
+            <img src="imagens/karmann.jpg" alt="Volkswagen Karmann Ghia">
             <div class="car-info">
                 <h3>Volkswagen Karmann Ghia</h3>
                 <span class="ano">1959 - 1975 • Brasil</span>
                 <p>Beleza italiana com mecânica alemã</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/karmann.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
@@ -74,7 +76,7 @@
                 <h3>Ford Maverick</h3>
                 <span class="ano">1973 - 1979 • Brasil</span>
                 <p>Muscle car nacional</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/maverick.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
@@ -84,7 +86,7 @@
                 <h3>Puma GT</h3>
                 <span class="ano">1967 - 1995 • Brasil</span>
                 <p>Esportivo brasileiro com alma de competição</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/puma.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
@@ -94,10 +96,9 @@
                 <h3>Fiat 147</h3>
                 <span class="ano">1976 - 1987 • Brasil/Itália</span>
                 <p>Primeiro Fiat brasileiro</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/fiat147.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
-
 
         <div class="car-card">
             <img src="imagens/Willys.jpg" alt="Willys Overland">
@@ -105,30 +106,32 @@
                 <h3>Willys Overland</h3>
                 <span class="ano">Anos 60/70 • Brasil</span>
                 <p>Clássico dos anos dourados</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/willys.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
 
         <div class="car-card cuda-card">
             <img src="imagens/cuda.jpg" alt="Plymouth Cuda">
             <div class="car-info">
-                <h3>Ford Corcel / Cuda</h3>
+                <h3>Plymouth Cuda</h3>
                 <span class="ano">1970 - 1974 • EUA</span>
                 <p>Um dos muscle cars mais lendários da história.</p>
-                <a href="#" class="detalhes-btn">Ver Detalhes</a>
+                <a href="pages/cuda.html" class="detalhes-btn">Ver Detalhes</a>
             </div>
         </div>
+
     </div>
 
     <div id="footer"></div>
 
     <script src="js/includes.js"></script>
-    <script>
 
-            document.querySelector('.hamburger').addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.toggle('active');
-            });
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
+
 </body>
 
 </html>
